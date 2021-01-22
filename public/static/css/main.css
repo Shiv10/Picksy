@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+#draw {
+	border: 2px solid black;
+	float: left;
+	margin-left: 0.2em;
+	height: 500px;
+	width: 500px;
+}
+
+#chat {
+	border: 2px solid black;
+	float: left;
+	margin-right: 0.2em;
+	width: 300px;
+	height: 550px;
+}
+
+.demo div {
+	text-align: left;
+	margin-left: 0.3em;
+	clear: none;
+}
+
+.txt {
+	width: 100%;
+	height: 92%;
+	overflow: auto;
+}
+
+#rough {
+	border: 2px solid black;
+	float: left;
+	width: 30%;
+	height: 500px;
+}
+
+#scorecard {
+	text-align: center;
+	float: right;
+	width: 30%;
+	height: 40%;
+	margin-right: 0;
+	margin-bottom: 0;
+	border: 2px solid black;
+	overflow: auto;
+}
+
+#clear-canvas {
+	float: left;
+}
+
+.btn {
+	float: left;
+}
+
+#word-reveal{
+	margin-bottom: 0;
+	height: 20%;
+	width: 40%;
+	border: 2px solid black;
+}

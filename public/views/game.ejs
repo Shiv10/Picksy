@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<title>Game</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script src="static/js/socket.io.js"></script>
+		<script type="module" src="static/js/main.js"></script>
+	</head>
+
+	<body>
+		<h1 id="no-name"></h1>
+		<div class="demo" id="main">
+			<div id="container">
+				<div id="draw">
+					<canvas id="canvas"></canvas>
+				</div>
+
+				<div id="chat">
+					<div id="message-container" class="txt"></div>
+					<div class="marg">
+						<input type="text" id="message-input" placeholder="Enter message here" autocomplete="off" />
+						<button id="send-button">Send</button>
+					</div>
+				</div>
+				<div id="rough">
+					<h3 id="timer">Game will begin shortly</h3>
+					<h4 id="word-holder"></h4>
+					<h4 id="drawer"></h4>
+					<br />
+					<select id="sel">
+						<option value="" id="o1">Not your turn</option>
+						<option value="" id="o2">Not your turn</option>
+						<option value="" id="o3">Not your turn</option>
+					</select>
+					<button id="chose1" style="display: none;">Round 1</button>
+					<button id="chose2" style="display: none;">Round 2</button>
+					<button id="chose3" style="display: none;">Round 3</button>
+					<div id="scorecard">
+						<h4><strong>Scorecard</strong></h4>
+					</div>
+					<div id="word-reveal"></div>
+				</div>
+				<button id="clear-canvas">Clear canvas</button>
+				<br />
+				<br>
+				<button id="fill">Fill</button>
+			</div>
+			<br />
+			<div id="color-select">
+				<select id="colorPicker">
+					<option value="#000000">Black</option>
+					<option value="#EE82EE">Violet</option>
+					<option value="#4B0082">Indigo</option>
+					<option value="#0000FF">blue</option>
+					<option value="#008000">green</option>
+					<option value="#FFFF00">yellow</option>
+					<option value="#FFA500">orange</option>
+					<option value="#FF0000">red</option>
+					<option value="#A52A2A">brown</option>
+				</select>
+			</div>
+		<button id="undo">Undo</button>
+		<button id="save">Save</button>
+		</div>
+		<h1 id="getRoom"><%=room%></h1>
+		<h1 id="getName"><%=username%></h1>
+	</body>
+</html>
